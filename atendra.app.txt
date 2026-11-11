@@ -1,0 +1,60 @@
+;;
+;; Domain:     atendra.app.
+;; Exported:   2026-11-11 11:06:30
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+atendra.app	3600	IN	SOA	marjory.ns.cloudflare.com. dns.cloudflare.com. 2054606179 10000 2400 604800 3600
+
+;; NS Records
+atendra.app.	86400	IN	NS	marjory.ns.cloudflare.com.
+atendra.app.	86400	IN	NS	sonny.ns.cloudflare.com.
+
+;; A Records
+atendra.app.	1	IN	A	64.29.17.1 ; cf_tags=cf-proxied:false
+atendra.app.	1	IN	A	216.198.79.1 ; cf_tags=cf-proxied:false
+chat.atendra.app.	1	IN	A	72.61.52.105 ; cf_tags=cf-proxied:true
+n8n.atendra.app.	1	IN	A	172.67.204.217 ; cf_tags=cf-proxied:true
+n8n.atendra.app.	1	IN	A	104.21.77.59 ; cf_tags=cf-proxied:true
+
+;; CNAME Records
+rsend.atendra.app.	3600	IN	CNAME	rsend-apne1.forge.rmta.net. ; cf_tags=cf-proxied:false
+send.atendra.app.	3600	IN	CNAME	send.forge.rmta.net. ; cf_tags=cf-proxied:false
+www.atendra.app.	1	IN	CNAME	8053e5680227bb7c.vercel-dns-017.com. ; cf_tags=cf-proxied:false
+
+;; MX Records
+atendra.app.	1	IN	MX	10 alt4.aspmx.l.google.com.
+atendra.app.	1	IN	MX	10 alt3.aspmx.l.google.com.
+atendra.app.	1	IN	MX	5 alt2.aspmx.l.google.com.
+atendra.app.	1	IN	MX	5 alt1.aspmx.l.google.com.
+atendra.app.	1	IN	MX	1 aspmx.l.google.com.
+
+;; TXT Records
+atendra.app.	1	IN	TXT	"google-site-verification=UtFAC-_G42cKEaMY83scCjC4IW82Ta5hTGXTnpQ6lEc"
+atendra.app.	1	IN	TXT	"google-site-verification=1vO_eXQDhdEji9FmbERHRC44a1kPchgA6MIj5RHi8MQ"
+atendra.app.	1	IN	TXT	"v=spf1 include:_spf.google.com -all"
+_dmarc.atendra.app.	1	IN	TXT	"v=DMARC1; p=quarantine; rua=mailto:dmarc@atendra.app; pct=100"
+google._domainkey.atendra.app.	1	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhiCLtTnHQDP/C6KuGw8izzvAEXcm8s9wJc8+m/G1CoY4cAvVh5x1mZcn3wxj+RyhN3zqTXI4I5I34/uxcnM3IMA74VGqyKEMYNE8GhL4hka3bH9TIrABMpAzCCzVyFw+FxCSoum25INCBwLeqGg0c1PE33savZuqI+ydiKRLqEJpdTU+t0y+6dVcO0isHxuC5" "jnH23jJXyESzQvAy4F0+IsdVz89MSCMi0qB6ptSINUrbGoQJcz3dQ0W2IZAOyrfPubYH2AbnBVXndU3/3kmniB0ZThlB6HSG0nGPTNypIhlWtUUhJM/dE2zJv43+lQlGwe5DxyCTAM2cCBM49cZmwIDAQAB"
+resend._domainkey.atendra.app.	3600	IN	TXT	"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIv5nWI2iIK1wBlxYZhTBga+hBhiv4O/lgTBwKa9xddZVznv78Q/mrxr4QijaToGxRfOZkkiAbVKhj3o0fVhsizAeUXE6xKS7ZL3vD/AS9JrEuAR0379o9/W9rWYsXooBX4gxxfPyw78/V9AofhVWXyRAKDaoDMhmnNX0Cba7GowIDAQAB"
+_vercel.atendra.app.	1	IN	TXT	"vc-domain-verify=www.atendra.app,c5767710f30063ce6ff4"
+_vercel.atendra.app.	1	IN	TXT	"vc-domain-verify=atendra.app,7043779a6827646ade2a"
